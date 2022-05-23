@@ -1,5 +1,24 @@
 # Getting Started with Create React App
 
+# Project Name : WALTON
+##  Livesite Link : [WALTON](https://electronics-wirehouse-client.web.app/ "livesite")
+
+##  Description
+### At first  create client side and Server side.My projects is about Walton Wirehouse management system.all products display in manage inventory page.We cann add all of the product in walton wirehouse from supplier..when any of the products deliverd,the quantity of products decrease.
+
+## Feature
+
+* connecting server side with client side
+
+* connecting server with mongodb
+
+* using react router.  
+
+* Maintain folder structure.
+
+* react router.
+
+* data will be inserted in mongodb when we add product from client side
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
