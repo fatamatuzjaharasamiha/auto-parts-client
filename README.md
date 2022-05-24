@@ -12,11 +12,15 @@
 
 * connecting server with mongodb
 
-* using react router.  
-
 * Maintain folder structure.
 
-* react router.
+* using react router.  
+
+* using tailwind css.
+
+* using tailwind css component Daisy UI.  
+
+
 
 * data will be inserted in mongodb when we add product from client side
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
