@@ -18,7 +18,9 @@
 
 * using tailwind css.
 
-* using tailwind css component Daisy UI.  
+* using tailwind css component Daisy UI.
+
+* install firebase.  
 
 
 
