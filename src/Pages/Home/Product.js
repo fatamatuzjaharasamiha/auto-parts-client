@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-    const {_id, name, picture, description } = product
+    const { _id, name, picture, description } = product
     const navigate = useNavigate();
     const navigateToPurchase = (id) => {
         navigate(`/purchase/${id}`)
@@ -15,9 +15,9 @@ const Product = ({ product }) => {
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">Name : {name}</h2>
-                    <p>{description.slice(1, 100)}</p>
+                    <p>{description.slice(1, 100)}..</p>
                     <div class="card-actions">
-                    <button onClick={() => navigateToPurchase(_id)} className='btn btn-secondary mt-3'>Purchase</button>
+                        <button onClick={() => navigateToPurchase(_id)} className='btn btn-secondary mt-3'>Purchase</button>
                     </div>
                 </div>
             </div>

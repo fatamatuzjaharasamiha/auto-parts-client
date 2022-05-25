@@ -2,10 +2,11 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='m-10'>
-            <h2 className='text-5xl text-purple-500 '>Question And Answer</h2>
+        <div class="">
+           <p className='text 5xl'>Question And Answer</p>
+           <div>
 
-            <p></p>
+           </div>
         </div>
     );
 };

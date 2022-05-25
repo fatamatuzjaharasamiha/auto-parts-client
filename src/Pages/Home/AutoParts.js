@@ -3,7 +3,7 @@ import React from 'react';
 const AutoParts = () => {
     return (
         <div className='m-10'>
-            <h3 className='font-bold text-2xl m-5'>Auto Parts Manufacturers</h3>
+            <h3 className='font-bold text-3xl m-5'>Auto Parts Manufacturers</h3>
            <div>
                <img src="https://i.ibb.co/t8n1hmL/auto-parts-1.png" alt="" />
                
