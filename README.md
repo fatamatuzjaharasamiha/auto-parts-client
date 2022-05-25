@@ -22,6 +22,8 @@
 
 * install firebase.  
 
+* use react hook form.  
+
 
 
 * data will be inserted in mongodb when we add product from client side
