@@ -3,6 +3,7 @@ import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import Purchase from './Pages/Purchase/Purchase';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/purchase/:id" element={<Purchase></Purchase>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
+        <Route path="/portfolio" element={<Portfolio></Portfolio>} />
         <Route path="/login" element={<Login></Login>} />
 
 
