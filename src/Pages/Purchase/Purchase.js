@@ -7,22 +7,27 @@ const Purchase = () => {
     const [tools, setTools] = useState([])
 
     useEffect(() => {
-        fetch('products.json')
+        const url = `http://localhost:5000/product/${id}`
+        console.log(url);
+        fetch(url)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setTools(data))
     }, [])
     return (
         <div className=''>
-            <h1>Purchase Your product</h1>
-            <div class="card  bg-base-100 shadow-xl">
+            <h1 className='text-3xl mt-10 font-bold'>Purchase Your product</h1>
+            <div class="card m-10 w-6/12 bg-purple-200 shadow-2xl ">
                 <figure class="px-10 pt-10">
-                    <img src="" alt="Shoes" class="rounded-xl" />
+                    <img src={tools.picture} alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 class="card-title">Name : {tools.name}</h2>
+                    <h2 class="card-title">Price : {tools.price}</h2>
+                    <p className='font-bold'>Min Order Quantity : {tools.minimumOrderQuantity}</p>
+                    <p className='font-bold'>Available Quantity : {tools.availableQuantity}</p>
+                    <p>{tools.description}</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+
                     </div>
                 </div>
             </div>

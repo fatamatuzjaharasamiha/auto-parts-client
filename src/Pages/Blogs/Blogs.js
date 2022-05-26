@@ -3,9 +3,9 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div class="card glass">
-            <figure><img className='w-4/12	' src="https://i.ibb.co/wwZ9ZSv/q-question-answer-word-written-wooden-blocks-text-written-black-letters-reflected-mirror-surface-212.jpg" alt="car!" /></figure>
+            <figure><img className='w-4/12 mt-6	' src="https://i.ibb.co/wwZ9ZSv/q-question-answer-word-written-wooden-blocks-text-written-black-letters-reflected-mirror-surface-212.jpg" alt="car!" /></figure>
 
-            <div className='grid items-center bg-orange-100'>
+            <div className='grid items-center bg-orange-100 m-12 shadow-3xl'>
                 <div class="card-body">
                     <p className='text-2xl font-bold '>Question 1 : How will you improve the performance of a React Application? </p>
                     <p className=' text-xl'><span className='text-xl font-bold'>Answer :</span>To improve the performance of a react application , need to make sure that components receive only necessary props.It will let you control the CPU consumption and avoid over-rendering unnecessary features. The solution is to create a functional component that will collect all props and redistribute them to other components,have to keep component state local where necessary,Code-splitting in React using dynamic import().</p>
