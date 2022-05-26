@@ -4,55 +4,56 @@
         "_id": 1,
         "name": "WHEEL",
         "picture": "https://i.ibb.co/zPXb65J/tools-2.jpg",
-        "price": "30000",
+        "price": "500",
         "description": " cars have taken on a variety of bodies, designs, and sizes. Some auto parts are now obsolete and have expired or been replaced with new versions. The car parts that have always been in use are the wheels ",
-        "minimumOrderQuantity": "3500",
-        "availableQuantity": "11200"
+        "minimumOrderQuantity": "10",
+        "availableQuantity": "50"
     },
     {
         "_id": 2,
         "name": "SMART DEVICES",
         "picture": "https://i.ibb.co/gVtpbpw/tools-3.jpg",
-        "price": "20000",
-        "description": "It used to be cars were purely a mode of transportation. People cared about the engine, the style, the comfortability of the interior. These things still matter, but of equal importance today is how technologically enabled a vehicle is.These devices come with eSIM for internet connectivity, and IoT sensors to capture information on the health of the car, fuel requirements and rely on cameras to keep track of the driver’s distraction level by analysing their body posture and face. In case of break-in attempts, they can alert the owners via their phone.",
-        "minimumOrderQuantity": "5050",
-        "availableQuantity": "23000"
+        "price": "600",
+        "description":" These devices come with eSIM for internet connectivity, and IoT sensors to capture information on the health of the car, fuel requirements and rely on cameras to keep track of the driver’s distraction level by analysing their body posture and face. In case of break-in attempts, they can alert the owners via their phone.",
+        "minimumOrderQuantity": "50",
+        "availableQuantity": "100"
     },
     {
         "_id": 3,
         "name": "OIL FLUIDS",
         "picture": "https://i.ibb.co/ZTmbpMM/tools-4.jpg",
-        "price": "22000",
-        "description": "The most basic fluid drivers should check is oil. Its purpose is to act as a lubricant for the components under the hood. Left alone, old oil will eventually transform into a sludge-like substance that inhibits your vehicle from performing effectively. Fortunately, checking the oil is a simple process.",
-        "minimumOrderQuantity": "5000",
-        "availableQuantity": "22000"
+        "price": "800",
+        "description":" The most basic fluid drivers should check is oil. Its purpose is to act as a lubricant for the components under the hood. Left alone, old oil will eventually transform into a sludge-like substance that inhibits your vehicle from performing effectively. Fortunately, checking the oil is a simple process.",
+        "minimumOrderQuantity": "200",
+        "availableQuantity": "500"
     },
     {
         "_id": 4,
         "name": "REPLACEMENT",
         "picture": "https://i.ibb.co/MhxdMNc/tools-5.jpg",
-        "price": "32000",
-        "description": "  Insurance companies may have a timeframe for when you have to purchase new car replacement coverage. For example, Nationwide auto insurance requires you to buy coverage within six months of a new car purchase. Erie Insurance lets you add its New Auto Security to a policy at any time, as long as it’s before an accident.",
-        "minimumOrderQuantity": "6000",
-        "availableQuantity": "33000"
+        "price": "700",
+        "description": "  Nationwide auto insurance requires you to buy coverage within six months of a new car purchase. Erie Insurance lets you add its New Auto Security to a policy at any time, as long as it’s before an accident.",
+        "minimumOrderQuantity": "300",
+        "availableQuantity": "800"
     },
     {
         "_id": 5,
         "name": "EQUIPMENT",
         "picture": "https://i.ibb.co/tLTVGts/cate6-180x210.jpg",
-        "price": "5000",
-        "description": "Tools and equipment are terms that are often used interchangeably without knowing the actual difference between tools and equipment, but in fact, they have different definitions. Tools and equipment are not only two words that are often used in day to day life, but also two utensils that are often used every day as well ",
-        "minimumOrderQuantity": "2000",
+        "price": "500",
+        "description": " Tools and equipment are terms that are often used interchangeably without knowing the actual difference between tools and equipment, but in fact, they have different definitions. Tools and equipment are not only two words that are often used in day to day life, but also two utensils that are often used every day as well ",
+        "minimumOrderQuantity": "500",
         "availableQuantity": "10000"
     },
     {
         "_id":6,
         "name": "LIGHTING",
         "picture": "https://i.ibb.co/xDZGRtc/cate4-180x200.jpg",
-        "price": "62000",
-        "description": "According to the Department of Transportation Motor Vehicle Administration, in order to successfully pass a driver’s test, you must be able to identify a car’s lights as well as how to use them. This mandate supposedly ensures that drivers will use their car’s lights correctly. Unfortunately, many drivers “forget” these skills once they’ve taken the test. Not only does this put their own lives in danger, but the lives of fellow motorists as well. ",
-        "minimumOrderQuantity": "6050",
+        "price": "620",
+        "description": "  Spare lamps boxes for cars. Product family features. Range of most important spare lamps; Clear labeling and application illustration; Reserve light for  ",
+        "minimumOrderQuantity": "600",
         "availableQuantity":"14500"
     }
+    
     
 ]
