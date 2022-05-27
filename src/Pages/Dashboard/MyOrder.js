@@ -44,10 +44,10 @@ const MyOrders = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>ORDER BY</th>
-                            <th>ITEM</th>
+                            <th>Order</th>
+                            <th>Product</th>
                             <th>Quantity</th>
-                            <th>PRICE</th>
+                            <th>Price</th>
                             <th>STATUS</th>
                             <th>PAYMENT STATUS</th>
                         </tr>

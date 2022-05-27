@@ -10,7 +10,7 @@ const MyProfile = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth)
 
-    const imageStorageKey = '02edd5c413d22a736d8b7acfa51c03ac'
+    const imageStorageKey = '3131d7a51303085613fdc7271460e1e0'
 
     const onSubmit = (data) => {
         const name = user.displayName
@@ -54,11 +54,11 @@ const MyProfile = () => {
                         .then(res => res.json())
                         .then(inserted => {
                             if (inserted.acknowledged) {
-                                toast.success("Updated Profile successfully")
+                                toast.success("Successful")
                                 reset()
                             }
                             else {
-                                toast.error("Failed to update")
+                                toast.error("Failed")
                             }
                         })
                 }
