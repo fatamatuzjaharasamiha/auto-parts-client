@@ -1,58 +1,50 @@
-[  
+[
     {
-        "_id": 1,
         "name": "WHEEL",
-        "picture": "https://i.ibb.co/zPXb65J/tools-2.jpg",
-        "price": "500",
+        "img": "https://i.ibb.co/zPXb65J/tools-2.jpg",
+        "price": 500,
         "description": " cars have taken on a variety of bodies, designs, and sizes. Some auto parts are now obsolete and have expired or been replaced with new versions. The car parts that have always been in use are the wheels ",
-        "minimumOrderQuantity": "10",
-        "availableQuantity": "50"
+        "minimumOrder": 10,
+        "quantity": 50
     },
     {
-        "_id": 2,
         "name": "SMART DEVICES",
-        "picture": "https://i.ibb.co/gVtpbpw/tools-3.jpg",
-        "price": "600",
-        "description":" These devices come with eSIM for internet connectivity, and IoT sensors to capture information on the health of the car, fuel requirements and rely on cameras to keep track of the driver’s distraction level by analysing their body posture and face. In case of break-in attempts, they can alert the owners via their phone.",
-        "minimumOrderQuantity": "50",
-        "availableQuantity": "100"
+        "img": "https://i.ibb.co/gVtpbpw/tools-3.jpg",
+        "price": 600,
+        "description": " These devices come with eSIM for internet connectivity, and IoT sensors to capture information on the health of the car, fuel requirements and rely on cameras to keep track of the driver’s distraction level by analysing their body posture and face. In case of break-in attempts, they can alert the owners via their phone.",
+        "minimumOrder": 50,
+        "quantity": 100
     },
     {
-        "_id": 3,
         "name": "OIL FLUIDS",
-        "picture": "https://i.ibb.co/ZTmbpMM/tools-4.jpg",
-        "price": "800",
-        "description":" The most basic fluid drivers should check is oil. Its purpose is to act as a lubricant for the components under the hood. Left alone, old oil will eventually transform into a sludge-like substance that inhibits your vehicle from performing effectively. Fortunately, checking the oil is a simple process.",
-        "minimumOrderQuantity": "200",
-        "availableQuantity": "500"
+        "img": "https://i.ibb.co/ZTmbpMM/tools-4.jpg",
+        "price": 800,
+        "description": " The most basic fluid drivers should check is oil. Its purpose is to act as a lubricant for the components under the hood. Left alone, old oil will eventually transform into a sludge-like substance that inhibits your vehicle from performing effectively. Fortunately, checking the oil is a simple process.",
+        "minimumOrder": 200,
+        "quantity": 500
     },
     {
-        "_id": 4,
         "name": "REPLACEMENT",
-        "picture": "https://i.ibb.co/MhxdMNc/tools-5.jpg",
-        "price": "700",
+        "img": "https://i.ibb.co/MhxdMNc/tools-5.jpg",
+        "price": 700,
         "description": "  Nationwide auto insurance requires you to buy coverage within six months of a new car purchase. Erie Insurance lets you add its New Auto Security to a policy at any time, as long as it’s before an accident.",
-        "minimumOrderQuantity": "300",
-        "availableQuantity": "800"
+        "minimumOrder": 300,
+        "quantity": 800
     },
     {
-        "_id": 5,
         "name": "EQUIPMENT",
-        "picture": "https://i.ibb.co/tLTVGts/cate6-180x210.jpg",
-        "price": "500",
+        "img": "https://i.ibb.co/tLTVGts/cate6-180x210.jpg",
+        "price": 500,
         "description": " Tools and equipment are terms that are often used interchangeably without knowing the actual difference between tools and equipment, but in fact, they have different definitions. Tools and equipment are not only two words that are often used in day to day life, but also two utensils that are often used every day as well ",
-        "minimumOrderQuantity": "500",
-        "availableQuantity": "10000"
+        "minimumOrder": 500,
+        "quantity": 10000
     },
     {
-        "_id":6,
         "name": "LIGHTING",
-        "picture": "https://i.ibb.co/xDZGRtc/cate4-180x200.jpg",
-        "price": "620",
+        "img": "https://i.ibb.co/xDZGRtc/cate4-180x200.jpg",
+        "price": 620,
         "description": "  Spare lamps boxes for cars. Product family features. Range of most important spare lamps; Clear labeling and application illustration; Reserve light for  ",
-        "minimumOrderQuantity": "600",
-        "availableQuantity":"14500"
+        "minimumOrder": 600,
+        "quantity": 14500
     }
-    
-    
 ]
