@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Business from './Business';
 import Car from './Car';
 import Products from './Products';
+import Reviews from './Reviews';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <AutoParts></AutoParts>
             <Products></Products>
             <Car></Car>
+            <Reviews/>
             <Business></Business>
             
         </div>
