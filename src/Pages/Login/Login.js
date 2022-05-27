@@ -5,6 +5,7 @@ import Loading from '../Shared/Loading';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -26,12 +27,12 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-
+    const [token] = useToken(user || gUser)
     useEffect(() => {
-        if (user || gUser) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user, gUser, from, navigate])
+    }, [user, gUser, from, navigate,token])
 
     if (loading || gLoading) {
         return <Loading></Loading>
@@ -41,9 +42,7 @@ const Login = () => {
         signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
     }
 
-    // if (user || gUser) {
-    //     navigate(from, { replace: true });
-    // }
+  
 
     const onSubmit = data => {
         console.log(data);
@@ -56,7 +55,7 @@ const Login = () => {
             console.log('email sent')
             toast('Email sent')
         }
-        
+
 
     }
     return (
@@ -79,7 +78,7 @@ const Login = () => {
                                         message: "Email is required"
                                     },
                                     pattern: {
-                                        value:  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                                        value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                                         message: 'Provide a valid Email' // JS only: <p>error message</p> TS only support string
                                     }
                                 })} />
