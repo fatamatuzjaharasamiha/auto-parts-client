@@ -21,7 +21,7 @@ const Blogs = () => {
                     <p className='text-xl'><span className='text-xl font-bold'>Answer :</span> Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object. getPrototypeOf and Object.</p>
                 </div>
                 <div class="card-body">
-                    <p className='text-2xl font-bold '>Question 4 :  </p>
+                    <p className='text-2xl font-bold '>Question 4 : You have an array of products. Each object has a name, price, description, etc. How will you implement a search to find products by name? </p>
                     <p className='text-xl'><span className='text-xl font-bold'>Answer :</span> 1) If we need the index of the found element in the array,have to use findIndex() .
                         2) to need to find the index of a value,have to use Array.prototype.indexOf()
                         3) If  need to find if a value exists in an array, use Array.prototype.includes().</p>
