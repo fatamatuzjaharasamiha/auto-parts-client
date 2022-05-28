@@ -35,7 +35,7 @@ const AddProduct = () => {
                         minimumOrder,
                         description
                     }
-                    fetch('http://localhost:5000/addproduct', {
+                    fetch('https://rocky-wildwood-73268.herokuapp.com/addproduct', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json',

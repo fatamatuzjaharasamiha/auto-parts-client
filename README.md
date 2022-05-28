@@ -3,8 +3,6 @@
 # Project Name : AUTO PARTS
 ##  Livesite Link : [AUTO PARTS](https://electronics-wirehouse-client.web.app/ "livesite")
 
-##  Description
-### At first  create client side and Server side.My projects is about Walton Wirehouse management system.all products display in manage inventory page.We cann add all of the product in walton wirehouse from supplier..when any of the products deliverd,the quantity of products decrease.
 
 ## Feature
 

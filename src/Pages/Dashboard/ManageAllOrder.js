@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading';
 
 const ManageAllOrders = () => {
-    const { data: allOrders, isLoading, refetch } = useQuery('allorders', () => fetch('http://localhost:5000/allorders', {
+    const { data: allOrders, isLoading, refetch } = useQuery('allorders', () => fetch('https://rocky-wildwood-73268.herokuapp.com/allorders', {
         method: 'GET',
         headers: {
             "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
     }
 
     const handleShift = (id) => {
-        const url = `http://localhost:5000/shifted/${id}`
+        const url = `https://rocky-wildwood-73268.herokuapp.com/shifted/${id}`
         fetch(url, {
             method: 'PATCH',
             headers: {

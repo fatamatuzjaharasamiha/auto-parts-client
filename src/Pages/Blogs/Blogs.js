@@ -22,7 +22,9 @@ const Blogs = () => {
                 </div>
                 <div class="card-body">
                     <p className='text-2xl font-bold '>Question 4 :  </p>
-                    <p className='text-xl'><span className='text-xl font-bold'>Answer :</span></p>
+                    <p className='text-xl'><span className='text-xl font-bold'>Answer :</span> 1) If we need the index of the found element in the array,have to use findIndex() .
+                        2) to need to find the index of a value,have to use Array.prototype.indexOf()
+                        3) If  need to find if a value exists in an array, use Array.prototype.includes().</p>
                 </div>
                 <div class="card-body">
                     <p className='text-2xl font-bold '>Question 5 : What is a unit test? Why should write unit tests? </p>

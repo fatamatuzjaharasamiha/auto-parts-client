@@ -19,17 +19,17 @@ const Purchase = () => {
     const [quantityError, setQuantityError] = useState('')
 
     // useEffect(() => {
-    //     const url = `http://localhost:5000/product/${id}`
+    //     const url = `https://rocky-wildwood-73268.herokuapp.com/product/${id}`
     //     console.log(url);
     //     fetch(url)
     //         .then(res => res.json())
     //         .then(data => settool(data))
     // }, [id])
 
-    const { data: tool, isLoading, refetch } = useQuery('tool', () => fetch(`http://localhost:5000/product/${id}`, {
+    const { data: tool, isLoading, refetch } = useQuery('tool', () => fetch(`https://rocky-wildwood-73268.herokuapp.com/product/${id}`, {
         method: "GET",
         headers: {
-            // "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
+            "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
             "content-type": "application/json"
         },
     }).then(res => res.json()))
@@ -55,6 +55,7 @@ const Purchase = () => {
             toolId,
             price: (tool.price * inputQuantity)
         }
+        console.log(order);
         if (inputQuantity < tool.minimumOrder) {
             setQuantityError('Minimum order require ')
         }
@@ -63,10 +64,10 @@ const Purchase = () => {
         }
         else {
             setQuantityError('')
-            fetch('http://localhost:5000/order', {
+            fetch('https://rocky-wildwood-73268.herokuapp.com/order', {
                 method: "PUT",
                 headers: {
-                    // // "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
+                    "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
                     "content-type": "application/json"
                 },
                 body: JSON.stringify(order)
@@ -77,6 +78,7 @@ const Purchase = () => {
                 .then(data => {
                     refetch()
                     toast.success('Product purchased')
+                    console.log(data);
                 })
 
         }
@@ -128,7 +130,7 @@ const Purchase = () => {
                     quantityError ? <p>{quantityError}</p> : <p>{`Subtotal: ${price}`}</p>
                 }
                 {/* <p className='text-red-500'>{quantityError ? `${quantityError}` : <p></p>}</p> */}
-                <input type="submit" placeholder='' value='Place Order' className="input input-bordered w-full max-w-xs mt-5 btn btn-primary" />
+                <input type="submit" placeholder='' value='Order place' className="input input-bordered w-full max-w-xs mt-5 btn btn-primary" />
             </form>
         </div>
     );

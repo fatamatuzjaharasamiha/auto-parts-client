@@ -5,15 +5,15 @@ import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 
 const AddReview = () => {
-    const [user,loading] = useAuthState(auth)
+    const [user, loading] = useAuthState(auth)
     const ratingRef = useRef('')
-if(loading){
-    return <Loading/>
-}
+    if (loading) {
+        return <Loading />
+    }
     const handleAddReview = (e) => {
         e.preventDefault()
         const review = e.target.review.value
-        const rating=ratingRef.current.value
+        const rating = ratingRef.current.value
         const userReview = {
             name: user.displayName,
             email: user.email,
@@ -21,10 +21,10 @@ if(loading){
             review
         }
         console.log(userReview);
-        fetch('http://localhost:5000/userreview', {
+        fetch('https://rocky-wildwood-73268.herokuapp.com/userreview', {
             method: "POST",
             headers: {
-                "content-type":"application/json",
+                "content-type": "application/json",
                 "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
             },
             body: JSON.stringify(userReview)

@@ -43,7 +43,7 @@ const MyProfile = () => {
                     }
                     // send to database
 
-                    fetch(`http://localhost:5000/updateduser?email=${user.email}`, {
+                    fetch(`https://rocky-wildwood-73268.herokuapp.com/updateduser?email=${user.email}`, {
                         method: "PUT",
                         headers: {
                             'content-type': 'application/json',
@@ -68,7 +68,7 @@ const MyProfile = () => {
     }
 
 
-    const { data: displayUser, isLoading } = useQuery('user', () => fetch(`http://localhost:5000/user?email=${user.email}`, {
+    const { data: displayUser, isLoading } = useQuery('user', () => fetch(`https://rocky-wildwood-73268.herokuapp.com/user?email=${user.email}`, {
         method: "GET",
         headers: {
             "authorization": `Bearer ${localStorage.getItem('accessToken')}`,
@@ -79,8 +79,8 @@ const MyProfile = () => {
         return <Loading />
     }
     return (
-        <div className='grid sm:grid-cols-1 lg:grid-cols-2'>
-            <div className='text-center mt-16 bg-slate-100 shadow-lg rounded-lg'>
+        <div className=''>
+            <div className='text-center mt-16 bg-orange-100 shadow-lg rounded-lg m-6 p-10'>
                 <div className="avatar mt-8">
                     <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 my-5">
                         <img src={displayUser.img} alt='' />
@@ -93,7 +93,7 @@ const MyProfile = () => {
                 <h2 className='text-xl'>Education: {displayUser.education}</h2>
                 <h2 className='text-xl'>LinkedIn: {displayUser.linkedin}</h2>
             </div>
-            <div className='p-10'>
+            <div className='p-10 m-10'>
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <div className="form-control w-full max-w-xs">
@@ -203,7 +203,7 @@ const MyProfile = () => {
 
                         </label>
                     </div>
-                    <input className='btn w-full max-w-xs' type="submit" value="UPDATE PROFILE" />
+                    <input className='btn w-full max-w-xs btn-success' type="submit" value="UPDATE PROFILE" />
                 </form>
             </div>
         </div>
