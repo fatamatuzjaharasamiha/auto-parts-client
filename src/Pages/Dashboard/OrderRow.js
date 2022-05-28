@@ -10,14 +10,14 @@ const OrderRow = ({ tool, index }) => {
             <td>{tool.quantity}</td>
             <td>$ {tool.price}</td>
             <td>
-                {(tool.price && !tool.paid) && <Link to={`/dashboard/payment/${tool._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
-                {tool.shifted === true && <p className='text-success'>Shifted</p>}
+                {(tool.price && !tool.paid) && <Link to={`/dashboard/payment/${tool._id}`}><button className='btn btn-xs btn-accent font-bold'>Pay</button></Link>}
+                {tool.shifted === true && <p className='text-accent'>Shifted</p>}
                 {(tool.paid === true && !tool.shifted) && <p className='text-warning'>pending</p>}
             </td>
             <td>
                 {(tool.price && tool.paid) && <>
-                    <p><span className='text-success'>Paid</span></p>
-                    <p><small className='text-success'>TransactionId: {tool.transactionId}</small></p>
+                    <p><span className='text-accent'>(Paid)</span></p>
+                    <p><small className='text-accent'>TransactionId: {tool.transactionId}</small></p>
                 </>}
             </td>
         </tr>

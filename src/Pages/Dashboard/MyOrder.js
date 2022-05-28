@@ -39,7 +39,7 @@ const MyOrders = () => {
         <div>
             <h2>My Orders {tools.length}</h2>
             <div className="overflow-x-auto">
-                <table className="table w-full">
+                <table className="table w-full text-purple-600">
                     {/* <!-- head --> */}
                     <thead>
                         <tr>

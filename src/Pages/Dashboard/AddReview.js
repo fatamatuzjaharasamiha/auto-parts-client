@@ -37,14 +37,17 @@ const AddReview = () => {
     }
 
     return (
-        <div className='mt-12 ml-8'>
+       <div className=''>
+           <div className='m-10'>
             <form onSubmit={handleAddReview} >
-                <textarea name='review' className="textarea textarea-bordered" placeholder="Please insert your review"></textarea>
-                <input ref={ratingRef} type="number" placeholder="Enter Rating" class="input w-full max-w-xs" />
-
-                <input type="submit" value='Add Review' className="input input-bordered w-full max-w-xs btn btn-primary" />
+                <textarea name='review' className="textarea textarea-bordered" placeholder="Please add review"></textarea>
+                <br />
+                <input ref={ratingRef} type="number" placeholder=" Rating" class="input max-w-xs m-6" />
+                <br />
+                <input type="submit" value='Add Review' className="input input-bordered w-full max-w-xs btn btn-secondary" />
             </form>
         </div>
+       </div>
     );
 };
 
