@@ -53,7 +53,7 @@ const ManageProducts = () => {
                                 </div></td>
                                 <td>{tool.name}</td>
                                 <td>{tool.quantity}</td>
-                                <td><button onClick={() => handleDelete(tool._id)} className='btn btn-xs btn-error'>Delete</button></td>
+                                <td><button onClick={() => handleDelete(tool._id)} className='btn btn-xs btn-success'>Delete</button></td>
                             </tr>)
                         }
                     </tbody>
