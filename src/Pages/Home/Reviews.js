@@ -20,11 +20,11 @@ const Reviews = () => {
     return (
         <div>
             <h1 className='m-6 text-5xl'>Reviews</h1>
-           <div>
-           {
-                result.slice(-result.length).map(review => <Review key={review._id} reviewUser={review}></Review>)
-            }
-           </div>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                {
+                    result.slice(-result.length).map(review => <Review key={review._id} reviewUser={review}></Review>)
+                }
+            </div>
         </div>
     );
 };
